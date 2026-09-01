@@ -1,9 +1,27 @@
-# Graduate Admission Prediction using ANN
+# MNIST Digit Classification using ANN
 
-Basic regression project using an **Artificial Neural Network (ANN)** to predict the **Chance of Admit**.
+A basic ANN model for classifying handwritten digits from the MNIST dataset.
+
+### Dataset
+
+* 60,000 training and 10,000 test images
+* Image size: 28×28 grayscale
+* 10 classes (0–9)
 
 ### Model
-ANN Regression with **ReLU hidden layers** and **Linear activation** in the output layer.
 
-### Evaluation
-MSE, MAE, and R² Score.
+```text
+Flatten → Dense(128, ReLU) → Dense(10, Softmax)
+```
+
+### Technologies
+
+Python, TensorFlow, Keras, NumPy, Matplotlib, Scikit-learn
+
+### Loss
+
+`sparse_categorical_crossentropy`
+
+### Optimizer
+
+`Adam`
